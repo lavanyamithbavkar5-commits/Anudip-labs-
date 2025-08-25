@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Specials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:darkslategrey;
+      margin: 20px;
+    }
+   h1 {
+  text-align: center;
+  color:#fff;
+  text-decoration: underline;
+  margin-bottom: 80px;  /* Increased gap below heading */
+    }
+
+    .menu-container {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .dish-box {
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      width: 350px;       /* bigger box */
+      padding: 20px;      /* more padding */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+    .dish-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: darkblue;
+      margin: 12px 0 8px 0;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+      margin-bottom: 12px;
+    }
+    video {
+      width: 100%;
+      height: 220px;   /* bigger video */
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍽️ Our Menu 🍽️</h1>
+
+  <div class="menu-container">
+    <div class="dish-box">
+      <video controls>
+        <source src="https://videos.pexels.com/video-files/30044484/12888321_1080_1920_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="dish-name">Chicken Tandoori</div>
+      <div class="price">₹320</div>
+    </div>
+
+    <div class="dish-box">
+      <video controls>
+        <source src="https://videos.pexels.com/video-files/4762328/4762328-hd_1920_1080_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="dish-name">Pancake</div>
+      <div class="price">₹150</div>
+    </div>
+
+    <div class="dish-box">
+      <video controls>
+        <source src="https://videos.pexels.com/video-files/30044481/12888340_1080_1920_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="dish-name">Paneer Tikka</div>
+      <div class="price">₹220</div>
+    </div>
+  </div>
+
+</body>
+</html>
